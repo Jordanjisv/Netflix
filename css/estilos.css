@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #141414;
+  font-weight: bold;
+}
+
+header {
+  
+  background-color: #141414;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 0.7fr 3fr 2fr;
+  height: 70px;
+}
+
+.menu1 {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  justify-content: flex-start;
+  font-size: 0.85rem;
+}
+
+.menu2 {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.85rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  justify-content: center;
+}
+
+header li {
+  list-style: none;
+  display: inline;
+  padding-right: 15px;  
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  display: grid;
+  height: 500px;
+  max-width: auto;
+  grid-template-rows: 1fr 2fr;
+}
+
+main .principal {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .descripcion {
+  
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  width: 450px;
+  text-shadow: 3px 3px black;
+  color: #fff;
+  margin-top: 170px;
+  margin-left: 100px;
+}
+
+main .descripcion .descripcion_resumen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descripcion button {
+    font-size: 15px;
+  
+  font-weight: bold;
+  width: 180px;
+  height: 45px;
+  border-radius: 5px;
+  border: 0px;
+}
+.info{
+  
+  margin-left: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(73, 72, 72, 0.8);
+}
+
+.fa-info{
+  margin-right: 10px;
+}
+.fa-play{
+  margin-right: 5px;
+}
+
+
+.secundario{
+  position: absolute;
+  margin-top: 83vh;
+}
+
+.cartelera{
+  width: 100%;
+  object-fit: contain;
+  margin-top: -7px;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.populares, .series, .terror{
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+
+}
+
+.cartelera:hover{
+  transform: scale(1.1);
+}
+
+.populares::-webkit-scrollbar, .series::-webkit-scrollbar, .terror::-webkit-scrollbar{
+  display: none;
+}
+
+.cartelera_horizontal{
+  max-height: 250px;
+}
+
+.secciones{
+  color: #fff;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+footer{
+  width: calc(100% - 300px);
+  margin-top: 40px;
+  margin-left: 150px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  padding-bottom: 30px;
+}
+
+.iconos li{
+  display: inline;
+  font-size: 25px;
+}
+footer li{
+  color: #615F64;
+  list-style: none;
+  margin-top: 20px;
+  padding-right: 15px;  
+  font-size: 14px;
+}
+
+
+.enlaces{
+  display: grid;
+  margin-top: -20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.extras{
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 5px;
+  color: #615F64;
+  font-size: 12px;
+}
+
+.extras button{
+  background-color: #141414;
+  color: #615F64;
+  padding: 5px;
+  border: 1px solid #615F64;
+}
